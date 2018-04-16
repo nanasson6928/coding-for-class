@@ -52,7 +52,8 @@ def gugudan():
         gugudan()
     except : # ValueError말고 다른 에러 발생했을 경우
         print("알 수 없는 에러가 발생했습니다.")
-gugudan()
+gugudan() # 함수 실행
+
 
 # 조건 추가
 def gugudan():
