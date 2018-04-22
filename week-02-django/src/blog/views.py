@@ -1,8 +1,13 @@
-from django.http import HttpResponse
+# from django.http import HttpResponse
 from django.shortcuts import render
+# from random import randint
 # Create your views here.
 
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the blog index.")
+    # random_number = randint(1, 10)
+    # return HttpResponse("Hello, world. {}".format(random_number))
+    # return HttpResponse("Hello, world. You're at the blog index")
+    name = "wjddk"
+    return render(request, "index.html", { "name" : name})
