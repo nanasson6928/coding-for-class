@@ -8,12 +8,15 @@
      <meta name="description" content="">
      <meta name="author" content="">
      <title>{% block title %}sample{% endblock %}</title>
-     <!-- <title /> -->
+     <!-- <title /> 한 줄에서 처리 안될 경우 닫는 태그 -->
+     <!-- <link rel="stylesheet" href='{% static "css/lib/bootstrap.min.css" %}'>
+     <link rel="stylesheet" href='{% static "css/lib/font-awesome.min.css" %}'> -->
      <link rel="stylesheet" href='{% static "css/lib/bootstrap.min.css" %}'>
-     <link rel="stylesheet" href='{% static "css/lib/font-awesome.min.css" %}'>
      <link rel="stylesheet" href='{% static "css/base.css" %}'>
+
  </head>
  <body>
+   <!-- this is body tag : base.html에서 입력했는데 index.html과 같이 출력-->
    {% block body %}{% endblock %}
    <script src='{% static "js/lib/bootstrap.min.js" %}'></script>
  </body>

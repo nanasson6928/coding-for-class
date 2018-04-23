@@ -1,1 +1,22 @@
-<div>hello world {{ name }}</div>
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class = "container">
+  <div class = "col-xs-6">
+    <div class = "colorful-text">
+    <!-- <div>hello world {{ name }}</div> -->
+        <div>hello world, joe </div>
+        <div>hello world, scott </div>
+    </div>
+  </div>
+  <div class = "col-xs-6">
+    {% for article in article_list %}
+      <div>
+        {{ article.title }}
+        <span class="label label-default">{{ article.view_count }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
