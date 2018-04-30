@@ -6,3 +6,23 @@
   /* margin: 10px; */
   background-color: #222222;
 }
+
+/* <css문서 참고>
+static파일 : 고정되어있다는 의미
+프로그래밍하는 동안 변경되지 않는 파일
+ex. css파일은 스타일을 주는 묘사적인 툴에 불과하기 때문에
+    웹사이트를 사용하는 과정에서 바뀌지 않음 */
+
+/* <css 사용법?>
+1. index.html에 div태그 안에 style을 통해서 글자에 스타일을 줌 --> 번거로움
+2. css파일을 만듦 (static/css/base.css)
+3. base.css 파일에 colorful-text에 red컬러 부여
+4. index.html에서 class라는 이름에 colorful-text값을 부여함
+5. 4번을 상위 태그로 하면 하위 코드를 간편하게 짤 수 있다.
+6. 5번까지가 가능하려면 settings.py에서 STATIC 해당 줄에
+      STATIC_URL = '/static/'
+      STATICFILES_DIRS = [
+          os.path.join(BASE_DIR, "static"),
+      ]
+  으로 변경한다. (css문서 참고)
+7. base.html에서는 맨 첫 줄에 {%load static %}으로 변경해준다.(css문서 참고) */
